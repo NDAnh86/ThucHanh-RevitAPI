@@ -44,6 +44,10 @@ namespace A002_SelectElement
 
             IList<Reference> referenceCollection = uidoc.Selection.PickObjects(ObjectType.Edge);
             MessageBox.Show("You have selected total " + referenceCollection.Count.ToString() + " Edges.");
+
+
+            IList<Reference> referenceCollection1 = uidoc.Selection.PickObjects(ObjectType.Face);
+            MessageBox.Show("You have selected total " + referenceCollection1.Count.ToString() + " Faces.");
             return Result.Succeeded;
         }
     }
